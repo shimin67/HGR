@@ -149,22 +149,22 @@
         <div class="container is-max-desktop">
           <h2 class="title is-3 has-text-centered">Architecture</h2>
 
-          <!-- Figure -->
           <div class="content has-text-centered">
             <p class="has-text-grey has-text-justified">
               This work presents a brain-inspired robotic lifelong learning architecture based on hybrid episodic and generative knowledge replay for sequential manipulation tasks. 
               It is designed to preserve past-task knowledge under limited memory while supporting stable integration of new manipulation skills.
-              <ul>
-                <li>
+             </p>
+            <ul class="has-text-grey has-text-justified">>
+              <li>
               We design a memory-efficient hybrid replay strategy that preserves previous knowledge by fusing stored real trajectories with generated ones. 
               This design is inspired by replay-driven memory consolidation in biological systems, where the brain reactivates episodic traces and reconstructs fragments to support long-term cortical consolidation.
-                </li>
+              </li>
               <li>
               We further adopt a dual-stage learning system that mimics the brain's wake–sleep cycle, alternating between online skill acquisition and offline knowledge consolidation. 
               Specifically, an immediate policy acquires new skills through online reinforcement learning, while a general policy with a KAN backbone consolidates knowledge through offline behavior cloning.
               </li>
-              </ul>
-            </p>
+            </ul>
+            
             <img src="results/fig_architecture.png" alt="Lifelong learning architecture overview" loading="lazy" />
           </div>
                
@@ -180,12 +180,13 @@
           
           <!-- Figure 1 -->
           <div class="content has-text-centered">
-            <h3 class="title is-5">Overall performance comparison on Continual World</h3>
             <p class="has-text-grey has-text-justified">
-              The average performance of different robotic lifelong learning methods evaluated on each stage on the CW10 task
-              sequences.
-            <img src="results/fig_comparison.png" alt="Lifelong learning performance comparison" loading="lazy" style="width: 100%; max-width: 500px;" />
+              <strong>Overall performance comparison on Continual World.</strong>
+              The average performance of different robotic lifelong learning methods evaluated on each 
+              stage on the CW10 task sequences.
             </p>
+            <img src="results/fig_comparison.png" alt="Lifelong learning performance comparison" 
+                 loading="lazy" style="width: 100%; max-width: 500px;" />
           </div>
           
           <!-- Figure 2 -->
