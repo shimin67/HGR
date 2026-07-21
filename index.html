@@ -144,11 +144,32 @@
 <!-- End paper abstract -->
 
 
-    <!-- Lifelong learning performance -->
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container is-max-desktop">
-          <h2 class="title is-3 has-text-centered">Lifelong Learning Performance</h2>
+          <h2 class="title is-3 has-text-centered">Architecture</h2>
+          
+          <!-- Figure -->
+          <div class="content has-text-centered">
+            <h3 class="title is-5">This framework adopts a dual-stage memory system, which first performs exploratory learning on current new task to obtain an immediate policy, 
+              and then maintains a general policy across tasks through a knowledge construction scheme. 
+              This hybrid knowl- edge replay strategy effectively integrates stored episodic memory with generated trajectories for historical knowledge preservation, 
+              thereby preventing catastrophic forgetting. </h3>
+            <img src="results/fig_comparison.png" alt="Lifelong learning performance comparison" loading="lazy" />
+            <p class="is-size-6 has-text-grey">
+              Overview of our proposed lifelong learning framework for robotic manipulations.
+            </p>
+          </div>
+               
+        </div>
+      </div>
+    </section>
+    
+    <!-- Results -->
+    <section class="hero is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3 has-text-centered">Results</h2>
           
 
           <!-- Figure 1 -->
@@ -163,14 +184,28 @@
           
           <!-- Figure 2 -->
           <div class="content has-text-centered" style="margin-top: 3rem;">
-            <h3 class="title is-5">Replay storage vs. performance trade-off</h3>
+            <h3 class="title is-5">Memory-performance tradeoff of hybrid generative replay.</h3>
             <img src="results/fig_storage_tradeoff.png" alt="Replay storage and performance trade-off" loading="lazy" />
             <p class="is-size-6 has-text-grey">
               Performance of different architectures evaluated on each learning stage in CW10.
               Our method achieves state-of-the-art performance while using less than 50% of the
               replay storage required by episodic replay baselines.
             </p>
-          </div>              
+          </div>    
+
+          <!-- Figure 3 -->
+          <div class="content has-text-centered" style="margin-top: 3rem;">
+            <h3 class="title is-5">Quality and diversity evaluation of hybrid replay knowledge.
+              We evaluate the quality and diversity of generated trajectories, compared to the pure generative replay, 
+              the hybrid episodic-generative replay achieves lower FID scores and larger trajectory distribution coverage, 
+              as well as improved precision-recall results.</h3>
+            <img src="results/fig_storage_tradeoff.png" alt="Replay storage and performance trade-off" loading="lazy" />
+            <p class="is-size-6 has-text-grey">
+              Quality and diversity evaluation of generated trajectories..
+            </p>
+          </div> 
+          
+          
           
         </div>
       </div>
@@ -181,7 +216,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Individual Task Manipulation</h2>
+      <h2 class="title is-3 has-text-centered">Demonstration: Individual Task Manipulation</h2>
 
       <h3 class="title is-5 has-text-centered">Simulation Scenario</h3>
       <div class="columns is-centered is-multiline">
@@ -440,7 +475,7 @@
     <section class="hero is-small">
       <div class="hero-body">
         <div class="container is-max-desktop">
-          <h2 class="title is-3 has-text-centered">Long-horizon Manipulation Demonstration</h2>
+          <h2 class="title is-3 has-text-centered">Demonstration: Long-horizon Manipulation</h2>
           <h3 class="title is-5 has-text-centered">Simulation Scenario </h3> 
            <div class="columns is-centered">
             <div class="column is-half is-offset-one-quarter">
