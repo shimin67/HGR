@@ -148,16 +148,16 @@
       <div class="hero-body">
         <div class="container is-max-desktop">
           <h2 class="title is-3 has-text-centered">Architecture</h2>
-          
+
           <!-- Figure -->
           <div class="content has-text-centered">
-            <img src="results/fig_architecture.png" alt="Lifelong learning performance comparison" loading="lazy" />
-            <p class="is-size-6 has-text-grey has-text-justified">
-              This framework adopts a dual-stage memory system, which first performs exploratory learning on current new task to obtain an immediate policy, 
+            <p class="has-text-grey has-text-justified">
+              This framework adopts a dual-stage memory system, which first performs exploratory learning on the current new task to obtain an immediate policy, 
               and then maintains a general policy across tasks through a knowledge construction scheme. 
-              This hybrid knowl- edge replay strategy effectively integrates stored episodic memory with generated trajectories for historical knowledge preservation, 
+              This hybrid knowledge replay strategy effectively integrates stored episodic memory with generated trajectories for historical knowledge preservation, 
               thereby preventing catastrophic forgetting.
             </p>
+            <img src="results/fig_architecture.png" alt="Lifelong learning architecture overview" loading="lazy" />
           </div>
                
         </div>
@@ -170,40 +170,38 @@
         <div class="container is-max-desktop">
           <h2 class="title is-3 has-text-centered">Results</h2>
           
-
           <!-- Figure 1 -->
           <div class="content has-text-centered">
             <h3 class="title is-5">Overall performance comparison on Continual World</h3>
-            <img src="results/fig_comparison.png" alt="Lifelong learning performance comparison" loading="lazy" style="width: 100%; max-width: 500px;" />
-            <p class="is-size-6 has-text-grey has-text-justified">
+            <p class="has-text-grey has-text-justified">
               The average performance of different robotic lifelong learning methods evaluated on each stage on the CW10 task
               sequences.
+            <img src="results/fig_comparison.png" alt="Lifelong learning performance comparison" loading="lazy" style="width: 100%; max-width: 500px;" />
             </p>
           </div>
           
           <!-- Figure 2 -->
           <div class="content has-text-centered" style="margin-top: 3rem;">
-            <h3 class="title is-5">Memory-performance tradeoff of hybrid generative replay.</h3>
-            <img src="results/fig_storage_tradeoff.png" alt="Replay storage and performance trade-off" loading="lazy" style="width: 100%; max-width: 500px;" />
-            <p class="is-size-6 has-text-grey has-text-justified">
+            <h3 class="title is-5">Memory-performance tradeoff of hybrid generative replay.</h3>       
+            <p class="has-text-grey has-text-justified">
               Performance of different architectures evaluated on each learning stage in CW10.
               Our method achieves state-of-the-art performance while using less than 50% of the
               replay storage required by episodic replay baselines.
             </p>
+            <img src="results/fig_storage_tradeoff.png" alt="Replay storage and performance trade-off" loading="lazy" style="width: 100%; max-width: 500px;" />
           </div>    
 
           
          <!-- Figure 3 -->
         <div class="content has-text-centered" style="margin-top: 3rem;">
           <h3 class="title is-5">Quality and diversity evaluation of hybrid replay knowledge</h3>
-          <img src="results/fig_qd_evaluation.png" alt="Quality and diversity evaluation of hybrid replay knowledge" loading="lazy" />
-          <p class="is-size-6 has-text-grey has-text-justified">
+          <p class="has-text-grey has-text-justified">
             We evaluate the quality and diversity of generated trajectories compared to pure generative 
             replay. The hybrid episodic-generative replay achieves lower FID scores and larger 
             trajectory distribution coverage, as well as improved precision-recall results.
           </p>
-        </div> 
-          
+          <img src="results/fig_qd_evaluation.png" alt="Quality and diversity evaluation of hybrid replay knowledge" loading="lazy" />
+        </div>
         </div>
       </div>
     </section>
