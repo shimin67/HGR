@@ -152,10 +152,18 @@
           <!-- Figure -->
           <div class="content has-text-centered">
             <p class="has-text-grey has-text-justified">
-              This framework adopts a dual-stage memory system, which first performs exploratory learning on the current new task to obtain an immediate policy, 
-              and then maintains a general policy across tasks through a knowledge construction scheme. 
-              This hybrid knowledge replay strategy effectively integrates stored episodic memory with generated trajectories for historical knowledge preservation, 
-              thereby preventing catastrophic forgetting.
+              This work presents a brain-inspired robotic lifelong learning architecture based on hybrid episodic and generative knowledge replay for sequential manipulation tasks. 
+              It is designed to preserve past-task knowledge under limited memory while supporting stable integration of new manipulation skills.
+              <ul>
+                <li>
+              We design a memory-efficient hybrid replay strategy that preserves previous knowledge by fusing stored real trajectories with generated ones. 
+              This design is inspired by replay-driven memory consolidation in biological systems, where the brain reactivates episodic traces and reconstructs fragments to support long-term cortical consolidation.
+                </li>
+              <li>
+              We further adopt a dual-stage learning system that mimics the brain's wake–sleep cycle, alternating between online skill acquisition and offline knowledge consolidation. 
+              Specifically, an immediate policy acquires new skills through online reinforcement learning, while a general policy with a KAN backbone consolidates knowledge through offline behavior cloning.
+              </li>
+              </ul>
             </p>
             <img src="results/fig_architecture.png" alt="Lifelong learning architecture overview" loading="lazy" />
           </div>
