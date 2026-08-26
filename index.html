@@ -115,8 +115,10 @@
         <div class="content has-text-justified">
            <p>
              Continuously learning without forgetting remains a fundamental challenge for robotic systems. Replay-based methods mitigate forgetting, but full episodic replay incurs substantial storage overhead. Generative replay reduces storage, but repeated self-generation accumulates distributional drift that degrades replay fidelity.
-Inspired by hippocampal–cortical memory consolidation across wake and sleep, we develop a hybrid generative replay framework anchored by episodic memory for robotic lifelong learning. It employs diffusion-based trajectory generation with representative real trajectory retention, which anchors the generative process to curb distributional drift while preserving replay diversity and fidelity. The replay knowledge is adaptively scheduled by a task-aware prioritization mechanism and stably consolidated through a dual-memory policy architecture, alternating online short-term acquisition with offline long-term consolidation. 
-In simulation, our framework outperforms existing lifelong learning methods using less than 50% of the replay storage. Real-world deployment and seven-stage long-horizon manipulations further demonstrate its practicality. Our findings suggest that memory-anchored generative replay provides a general design principle for stable robotic lifelong learning under limited memory capacity.
+Inspired by hippocampal–cortical memory consolidation across wake and sleep, we develop a hybrid generative replay framework anchored by episodic memory for robotic lifelong learning. It employs diffusion-based trajectory generation with representative real trajectory retention, which anchors the generative process to curb distributional drift while preserving replay diversity and fidelity. 
+             The replay knowledge is adaptively scheduled by a task-aware prioritization mechanism and stably consolidated through a dual-memory policy architecture, alternating online short-term acquisition with offline long-term consolidation. 
+In simulation, our framework outperforms existing lifelong learning methods using less than 50% of the replay storage. Real-world deployment and seven-stage long-horizon manipulations further demonstrate its practicality. 
+             Our findings suggest that memory-anchored generative replay provides a general design principle for stable robotic lifelong learning under limited memory capacity.
           </p>
           
         </div>
